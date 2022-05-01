@@ -1,1 +1,4 @@
 # desafio-galoa
+
+Esse desáfio feita pela Galoá, é para mostrar as nossas habilidades em releção em como a gente coda uma landing page. Nesse exercício estava nítido a entensão da equipe de analizar em como a gente trabalha com grid-layout e flexbox, além disso, em como a gente trabalha com o JavaScript para a manipulação do DOM. 
+Na criação desse projeto eu percebi que tive bastante dificuldades em certas partes para superar alguns desáfios de CSS, mas no geral eu me senti bastante confiante em trabalhar com HTML e CSS. Porém, percebi que ainda tenho certas dificuldades em JS. Porém mesmo assim estou feliz com o meu projeto.
