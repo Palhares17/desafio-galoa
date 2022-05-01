@@ -1,0 +1,186 @@
+header {
+	background: var(--color-bg-light);
+	height: 100%;
+}
+
+.container-header {
+	height: 68px;
+	margin: 0 auto;
+	max-width: calc(100% - 43px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.lingua-perfil {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.header-conteudo p {
+	font-size: 14px;
+	font-weight: var(--font-regular);
+	color: var(--color-text);
+}
+
+.header-conteudo h5 {
+	font-size: 22px;
+	font-weight: var(--font-regular);
+	color: var(--color-text);
+}
+
+.lingua button {
+	display: flex;
+	font-family: "Quicksand", sans-serif;
+	font-size: 14px;
+	background: var(--color-bg-light);
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	cursor: pointer;
+	position: relative;
+}
+
+.perfil {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+}
+
+.perfil p {
+	font-size: 14px;
+	font-weight: var(--font-regular);
+	color: #333;
+	text-align: end;
+}
+
+.decoracao-texto {
+	text-decoration: underline;
+}
+
+.perfil img {
+	border-radius: 100%;
+	border: 1px solid #f5f5f5;
+	position: relative;
+}
+
+.perfil img::after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: var(--color-title);
+}
+
+#btn-mobile {
+	display: none;
+}
+
+/* Menu hamburguer */
+@media (max-width: 1070px) {
+	.header-conteudo p {
+		font-size: 12px;
+		font-weight: var(--font-regular);
+		color: var(--color-text);
+	}
+	.header-conteudo h5 {
+		font-size: 16px;
+		font-weight: var(--font-bold);
+	}
+	#btn-mobile {
+		display: flex;
+		border: none;
+		cursor: pointer;
+		gap: 20px;
+		border-radius: 4px;
+		margin-right: 10px;
+		background: transparent;
+	}
+	#hamburguer {
+		background-color: none;
+		display: block;
+		width: 20px;
+		height: 2px;
+		border-top: 3px solid var(--color-p2);
+		border-radius: 4px;
+		width: 20px;
+		border-radius: 4px;
+	}
+	#hamburguer::after,
+	#hamburguer::before {
+		content: "";
+		display: block;
+		width: 20px;
+		height: 3px;
+		background-color: var(--color-p2);
+		margin-top: 5px;
+		transition: 0.3s;
+		position: relative;
+		border-radius: 4px;
+	}
+}
+
+@media (max-width: 800px) {
+	.header-conteudo h5 {
+		font-size: 14px;
+		font-weight: var(--font-bold);
+	}
+	.header-conteudo p {
+		font-size: 12px;
+	}
+	.perfil p {
+		font-size: 12px;
+	}
+	.lingua button {
+		font-size: 12px;
+		gap: 3px;
+		padding: 3px 7px;
+		margin-left: 5.5px;
+	}
+}
+
+@media (max-width: 640px) {
+	.header-conteudo h5 {
+		font-size: 12px;
+		font-weight: var(--font-bold);
+	}
+	.header-conteudo p:first-child {
+		padding-top: 35px;
+	}
+	.perfil p {
+		font-size: 10px;
+	}
+	.lingua button {
+		font-size: 10px;
+		gap: 2px;
+		padding: 2px 5px;
+		margin-left: 5px;
+	}
+	.container-header {
+		height: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+	#btn-mobile {
+		position: absolute;
+		display: flex;
+		top: 10px;
+	}
+	.lingua-perfil {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 5px 0;
+		flex-wrap: wrap;
+	}
+	.lingua button {
+		margin-left: 0px;
+	}
+}

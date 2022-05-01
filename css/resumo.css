@@ -1,0 +1,33 @@
+.resumo {
+	margin-bottom: 30px;
+}
+
+.resumo h2 {
+	color: var(--color-h2);
+	background-color: var(--color-bg-light);
+	padding: 15px;
+}
+
+.resumo .container {
+	border: 1px solid #e6e6e6;
+	border-radius: 4px;
+}
+
+.resumo p {
+	padding: 15px;
+	font-size: 14px;
+	line-height: 23px;
+	letter-spacing: 0.02em;
+	color: var(--color-p);
+}
+
+.vermais,
+.vermenos {
+	padding: 5px;
+	font-weight: var(--font-bold);
+	cursor: pointer;
+}
+
+.oculto {
+	display: none;
+}

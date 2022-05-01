@@ -1,0 +1,110 @@
+.grid-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 250px;
+	gap: 30px;
+	margin: 0 auto;
+}
+
+main {
+	margin-bottom: 30px;
+}
+
+main h1 {
+	grid-column: 1 / 3;
+	grid-row: 1;
+	max-width: 100%;
+}
+
+main img.video {
+	grid-column: 1 / 3;
+	grid-row: 2;
+	width: 100%;
+}
+
+main .button-video {
+	margin: auto 0;
+	text-align: end;
+}
+main .btn {
+	padding: 5px 10px;
+	background: var(--color-title);
+	color: #fff;
+	border-radius: 4px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+main .btn .fa-download {
+	margin-right: 5px;
+}
+
+main .btn img {
+	margin-bottom: -3.5px;
+}
+
+main .pergunta {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 12px;
+}
+
+.detalhes {
+	border: 1px solid #ececec;
+	border-radius: 4px;
+	height: 100%;
+}
+
+.detalhes-conteudo {
+	padding: 10px 15px;
+}
+
+.detalhes h2 {
+	color: var(--color-h2);
+	background-color: var(--color-bg-light);
+	padding: 15px;
+}
+
+.detalhes-conteudo p {
+	line-height: 120%;
+	letter-spacing: 0.02em;
+	font-size: 12px;
+}
+
+span.inegrito {
+	font-weight: var(--font-bold);
+}
+
+.autores {
+	margin-top: 40px;
+}
+
+.autores h3 {
+	font-size: 14px;
+	font-weight: var(--font-bold);
+	margin-bottom: 5px;
+	color: var(--color-p);
+}
+
+.autores li {
+	font-size: 14px;
+	color: var(--color-p);
+	line-height: 120%;
+	letter-spacing: 0.02em;
+}
+
+.universidades p {
+	margin-top: 50px;
+	color: #ada0a0;
+	font-family: 12px;
+}
+
+@media (max-width: 800px) {
+	.grid-content {
+		display: block;
+	}
+	main .button-video {
+		margin: 15px 0;
+		text-align: start;
+	}
+}

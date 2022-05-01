@@ -1,0 +1,72 @@
+aside {
+	width: 220px;
+	background: #fff;
+	position: fixed;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+aside h2 {
+    color: #fff;
+    background-image: linear-gradient(to bottom, #FFB354, #EE7A3A);
+    font-size: 30px;
+    font-weight: bold;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+}
+
+aside nav ol li {
+    list-style: none;
+    color: var(--color-text);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-bottom: 2px solid #E7E7E7;
+} 
+
+@media (max-width: 1070px) {
+    aside {
+        top: 0;
+        display: none;
+    }
+    aside #btn-mobile {
+        position: absolute;
+        top: 70px;
+        left: 25px;
+    }
+    aside.menu-active #hamburguer {
+		border-top-color: transparent;
+	}
+	aside.menu-active #hamburguer::before {
+		transform: rotate(135deg);
+	}
+	aside.menu-active #hamburguer::after {
+		transform: rotate(45deg);
+		top: -8px;
+	}
+    aside.menu-active {
+        animation: slide .2s;
+    }
+    @keyframes slide {
+        from {
+            left: -220px;
+        }
+        to {
+            left: 0;
+        }
+    }
+}

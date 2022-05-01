@@ -1,0 +1,20 @@
+@import "./css/utilitarios.css";
+@import "./css/global.css";
+
+/* menu */
+@import "./css/menu.css";
+
+/* header */
+@import "./css/header.css";
+
+/* main */
+@import "./css/main.css";
+
+/* resumo */
+@import "./css/resumo.css";
+
+/* discussoes */
+@import "./css/discussoes.css";
+
+/* footer */
+@import "./css/footer.css";
