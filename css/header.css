@@ -4,7 +4,7 @@ header {
 }
 
 .container-header {
-	height: 68px;
+	height: 64px;
 	margin: 0 auto;
 	max-width: calc(100% - 43px);
 	display: flex;

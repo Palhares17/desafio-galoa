@@ -25,6 +25,7 @@ main .button-video {
 	margin: auto 0;
 	text-align: end;
 }
+
 main .btn {
 	padding: 5px 10px;
 	background: var(--color-title);
